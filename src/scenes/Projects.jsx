@@ -15,7 +15,7 @@ const projectVariant = {
   visible: { opacity: 1, scale: 1 },
 };
 
-const Project = ({ title }) => {
+const Project = ({ title, githubLink }) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
     bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
   const projectTitle = title.split(" ").join("-").toLowerCase();
@@ -23,11 +23,14 @@ const Project = ({ title }) => {
   return (
     <motion.div variants={projectVariant} className="relative">
       <div className={overlayStyles}>
-        <p className="text-2xl font-playfair">{title}</p>
-        <p className="mt-7">
-          Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla
-          porttitor accumsan tincidunt.
-        </p>
+        <a
+         href={githubLink }
+         target="_blank "
+         rel="noopener noreferrer "
+         className="`text-2xl font-playfair underline"
+         >
+          View On GitHub.
+         </a>
       </div>
       <img src={`../assets/${projectTitle}.png`} alt={projectTitle} />
     </motion.div>
@@ -77,13 +80,13 @@ const Projects = () => {
           >
             BEAUTIFUL USER INTERFACES
           </div>
-          <Project title="Project 1" />
-          <Project title="Project 2" />
+          <Project title="Project 1" githubLink="https://github.com/babubisleri001/FinTrack" />
+          <Project title="Project 2" githubLink="https://github.com/babubisleri001/inv-mgmt-system" />
 
           {/* ROW 2 */}
-          <Project title="Project 3" />
-          <Project title="Project 4" />
-          <Project title="Project 5" />
+          <Project title="Project 3" githubLink="https://github.com/babubisleri001/msg-app" />
+          <Project title="Project 4" githubLink="https://github.com/babubisleri001/file-sharing-application" />
+          <Project title="Project 5" githubLink="https://github.com/babubisleri001/serene" />
 
           
          

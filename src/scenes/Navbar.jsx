@@ -35,7 +35,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
       <div className="flex items-center justify-between mx-auto w-5/6 max-w-7xl">
         {/* Enhanced Logo/CV Button */}
         <a
-          href="https://drive.google.com/file/d/1JrsYgFKmnImy3XVCtxwqnGa0lh2ncqfl/view?usp=sharing"
+          href="https://drive.google.com/file/d/1Cx1kbpD170Krjlyt3dcsd-gH13mU2vOX/view?usp=sharing"
           target="_blank"
           rel="noreferrer"
           className="group relative overflow-hidden bg-gradient-to-r from-purple-600 via-pink-600 to-yellow-500 text-white px-6 py-3 rounded-2xl font-playfair text-lg font-bold shadow-2xl hover:shadow-purple-500/25 transition-all duration-300 transform hover:scale-105 hover:-translate-y-1"
