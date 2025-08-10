@@ -1,4 +1,4 @@
-# Portfolio App
+# Portfolio App - https://webfolio-cevs.vercel.app/
 
-Build a Responsive React Portfolio Website | Tailwind, Framer-Motion, & React Hook Form
+Built a Responsive React Portfolio Website using Tailwind, Framer-Motion, & React Hook Form
 
